@@ -10,7 +10,7 @@ type Cache struct {
 
 func NewCache() Cache {
 	return Cache{
-		data: map[string]string{"xyz": "yes"},
+		data: map[string]string{},
 	}
 }
 
