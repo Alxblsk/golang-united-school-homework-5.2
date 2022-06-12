@@ -32,7 +32,7 @@ func (c *Cache) Put(key string, value string) {
 func (c *Cache) Keys() []string {
 	c.cleanup()
 
-	keysList := make([]string, len(c.data))
+	keysList := []string{}
 
 	for key, _ := range c.data {
 		keysList = append(keysList, key)
